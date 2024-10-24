@@ -46,8 +46,8 @@ import { SITE_TITLE } from '../consts';
 	header {
 		margin: 0;
 		padding: 0 1em;
-		background: rgb(219, 218, 218);
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+		background: var(--background-light);
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 	}
 	h2 {
 		margin: 0;
@@ -57,6 +57,7 @@ import { SITE_TITLE } from '../consts';
 	h2 a,
 	h2 a.active {
 		text-decoration: none;
+		color: rgb(var(--black));
 	}
 	nav {
 		display: flex;
@@ -65,17 +66,25 @@ import { SITE_TITLE } from '../consts';
 	}
 	nav a {
 		padding: 1em 0.5em;
-		color: var(--black);
+		color: rgb(var(--gray-dark));
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
+		transition: color 0.2s ease, border-bottom-color 0.2s ease;
+	}
+	nav a:hover {
+		color: var(--accent);
 	}
 	nav a.active {
 		text-decoration: none;
 		border-bottom-color: var(--accent);
+		color: var(--accent);
 	}
 	.social-links,
 	.social-links a {
 		display: flex;
+	}
+	.social-links a:hover {
+		color: var(--accent);
 	}
 	@media (max-width: 720px) {
 		.social-links {
