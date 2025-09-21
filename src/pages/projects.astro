@@ -1,0 +1,28 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Projects | ${SITE_TITLE}`} description="My projects and work" />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>🚀 Projects</h1>
+			<p>
+				Here are some of my projects and work. This is a placeholder page - you can customize it with your actual projects.
+			</p>
+			<ul>
+				<li><strong>Project 1:</strong> Description of project 1</li>
+				<li><strong>Project 2:</strong> Description of project 2</li>
+				<li><strong>Project 3:</strong> Description of project 3</li>
+			</ul>
+		</main>
+		<Footer />
+	</body>
+</html>
