@@ -4,7 +4,3 @@
 export const SITE_TITLE = 'Austin Springer';
 export const SITE_DESCRIPTION = 'Personal blog on software, open source, and projects.';
 export const SITE_AUTHOR = 'Austin Springer';
-export const SOCIAL_LINKS = {
-	github: 'https://github.com/austinspringer',
-	linkedin: 'https://www.linkedin.com/in/austinspringer/',
-};
